@@ -2,7 +2,7 @@ import axios from "axios";
 
 //Cria uma nova instancia do Axios
 const api = axios.create({
-    baseURL: 'https://blogpessoal-uskt.onrender.com'
+    baseURL: import.meta.env.VITE_API_URL
 })
 
 //Função para cadastrar usuário
